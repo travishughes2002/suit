@@ -1,0 +1,10 @@
+@mixin input-base($base-prefix) {
+    background-color: #{$variable-base + 'background-color'};
+    border-radius: #{$variable-base + 'border-radius'};
+    border: var(--v-input--border);
+    padding: var(--v-input--padding);
+
+    font-size: var(--v-input--font-size);
+    color: var(--v-input--font-color);
+    font-family: var(--v-input--font-family);
+}

@@ -1,0 +1,330 @@
+:root {
+    /*
+        Theme globals
+        These are global theme settings that intended on being inherited from.
+    */
+    --theme-global--default-font-family: 'Roboto', Arial;
+    --theme-global--font-color: #fff;
+
+
+    /*
+        Prefixes
+    */
+    --prefix-body--background: linear-gradient(to bottom right, #3d4247, #1d1f1f);
+    --prefix-body--font-color: var(--theme-global--font-color);
+
+
+    /*
+        Typography Prefixes
+    */
+
+    // Typography Globals
+    --typography-global--base-font-size: 1rem;
+
+    // Heading 1
+    --typography--h1--increased-font-size: 1.4rem;
+    --typography--h1--font-family: var(--theme-global--default-font-family);
+    --typography--h1--font-color: var(--theme-global--font-color);
+    --typography--h1--margin: 1rem 0;
+
+    // Heading 2
+    --typography--h2--increased-font-size: 1.2rem;
+    --typography--h2--font-family: var(--theme-global--default-font-family);
+    --typography--h2--font-color: var(--theme-global--font-color);
+    --typography--h2--margin: 1rem 0;
+
+    // Heading 3
+    --typography--h3--increased-font-size: 1rem;
+    --typography--h3--font-family: var(--theme-global--default-font-family);
+    --typography--h3--font-color: var(--theme-global--font-color);
+    --typography--h3--margin: 1rem 0;
+
+    // Heading 4
+    --typography--h4--increased-font-size: 0.8rem;
+    --typography--h4--font-family: var(--theme-global--default-font-family);
+    --typography--h4--font-color: var(--theme-global--font-color);
+    --typography--h4--margin: 1rem 0;
+
+    // Heading 5
+    --typography--h5--increased-font-size: 0.6rem;
+    --typography--h5--font-family: var(--theme-global--default-font-family);
+    --typography--h5--font-color: var(--theme-global--font-color);
+    --typography--h5--margin: 1rem 0;
+
+    // Heading 6
+    --typography--h6--increased-font-size: 0.4rem;
+    --typography--h6--font-family: var(--theme-global--default-font-family);
+    --typography--h6--font-color: var(--theme-global--font-color);
+    --typography--h6--margin: 1rem 0;
+
+    // Strong
+    --typography--strong--increased-font-size: 0.1rem;
+    --typography--strong--font-family: var(--theme-global--default-font-family);
+    --typography--strong--font-color: var(--theme-global--font-color);
+    --typography--strong--margin: 1rem 0;
+
+    // p (Paragraph)
+    --typography--p--increased-font-size: 0.1rem;
+    --typography--p--font-family: var(--theme-global--default-font-family);
+    --typography--p--font-color: var(--theme-global--font-color);
+    --typography--p--margin: 1rem 0;
+
+    // a (Anchor)
+    --typography--a--increased-font-size: 0;
+    --typography--a--font-family: var(--theme-global--default-font-family);
+    --typography--a--font-color: var(--theme-global--font-color);
+    --typography--a--margin: 1rem 0;
+    --typography--a--text-decoration: none;
+    --typography--a--color-hover: #5061DE;
+
+    // ol (Ordered List)
+    --typography--ol--margin: 0;
+    --typography--ol--padding: 0;
+    --typography--ol--list-style-position: inside;
+
+    // ul (Unordered List)
+    --typography--ul--margin: 0;
+    --typography--ul--padding: 0;
+    --typography--ul--list-style-position: inside;
+
+    // li (List Item)
+    --typography--li--increased-font-size: 0;
+    --typography--li--font-family: var(--theme-global--default-font-family);
+    --typography--li--font-color: var(--theme-global--font-color);
+    --typography--li--margin: 0.2rem 0;
+
+    // label
+    --typography--label--increased-font-size: 0;
+    --typography--label--font-family: var(--theme-global--default-font-family);
+    --typography--label--font-color: var(--theme-global--font-color);
+    --typography--label--margin: 0;
+
+    // Table Head
+    --typography--table--thead--th--padding: 1.1rem 1rem;
+    --typography--table--thead--th--text-align: left;
+    --typography--table--thead--th--font-family: 'Roboto', Arial;
+    --typography--table--thead--th--font-color: white;
+    --typography--table--thead--th--font-weight: 500;
+    --typography--table--thead--th--increased-font-size: 0.1rem;
+    --typography--table--thead--th--background: rgb(148, 148, 148);
+
+    // Table Body
+    --typography--table--tbody--td--padding: 0.7rem 1rem;
+    --typography--table--tbody--td--text-align: left;
+    --typography--table--tbody--td--font-family: 'Roboto', Arial;
+    --typography--table--tbody--td--font-color: white;
+    --typography--table--tbody--td--font-weight: 100;
+    --typography--table--tbody--td--increased-font-size: none;
+    --typography--table--tbody--td--background: rgba(201, 201, 201, 0.1);
+
+    // Table Body - Odd override
+    --typography--table--tbody--td--odd-override--background: rgba(201, 201, 201, 0.2);
+
+
+
+    /*
+        Component: v-input
+    */
+    --v-input--background-color: #2d3033;
+    --v-input--background-color-hover: #35383c;
+    --v-input--border-radius: 10px;
+    --v-input--border: 1px solid #0e0e0e;
+    --v-input--border-hover: 1px solid #0e0e0e;
+    --v-input--padding: 0.7rem;
+    --v-input--font-size: 1.3rem;
+    --v-input--font-color: #fff;
+    --v-input--font-family: 'Roboto', Arial;
+
+
+    /*
+        Component: v-textarea
+    */
+    --v-textarea--background: #2d3033;
+    --v-textarea--font-color: #fff;
+    --v-textarea--border: 1px solid #0e0e0e;
+    --v-textarea--border-radius: 8px;
+    --v-textarea--padding: 0.5rem;
+    --v-textarea--font-size: 1.1rem;
+    --v-textarea--font-family: var(--theme-global--default-font-family);
+
+
+    /*
+        Component: v-button
+    */
+    --v-button--border-radius: 5px;
+
+    // Primary variation
+    --v-button--variation-primary--background: linear-gradient(to right, #3366FE, #6a5bbe);
+    --v-button--variation-primary--background-hover: linear-gradient(to right, #3366FE, #6a5bbe 70%);
+    --v-button--variation-primary--color: white;
+    --v-button--variation-primary--color-hover: white;
+    --v-button--variation-primary--border: none;
+    --v-button--variation-primary--border-hover: none;
+
+    // Secondary variation
+    --v-button--variation-secondary--background: #3c4045;
+    --v-button--variation-secondary--background-hover: #34393f;
+    --v-button--variation-secondary--color: white;
+    --v-button--variation-secondary--color-hover: white;
+    --v-button--variation-secondary--border: none;
+    --v-button--variation-secondary--border-hover: none;
+
+    // Size large modifiers
+    --v-button--size-lg--font-size: 1.5rem;
+    --v-button--size-lg--padding: 1.2rem 1rem;
+    --v-button--size-lg--min-width: 15rem;
+
+    // Size medium modifiers
+    --v-button--size-md--font-size: 1.1rem;
+    --v-button--size-md--padding: 0.9rem 1.5rem;
+    --v-button--size-md--min-width: 12rem;
+
+    // Size small modifiers
+    --v-button--size-sm--font-size: 1rem;
+    --v-button--size-sm--padding:  0.6rem 1rem;
+    --v-button--size-sm--min-width: 8rem;
+
+
+    /*
+        Component: Icon Button
+    */
+    --icon-button--size: 2.3rem;
+    --icon-button--background: #2b2c2f;
+    --icon-button--background-hover: linear-gradient(to right, #3366FE, #6a5bbe);
+    --icon-button--icon-color: #fff;
+    --icon-button--border: none;
+    --icon-button--border-radius: 50px;
+    --icon-button--icon-size: 1.2rem;
+
+
+    /*
+        Component: Wrapper
+    */
+    --wrapper--size-sm: 800px;
+    --wrapper--size-md: 1080px;
+    --wrapper--size-lg: 1380px;
+
+
+    /*
+        Component: Dropdown Menu
+    */
+    --dropdown-menu--background: #2B2C2F;
+    --dropdown-menu--margin: 0.7rem 0 0 0;
+    --dropdown-menu--padding: 1rem;
+    --dropdown-menu--min-width: 13rem;
+    --dropdown-menu--box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    --dropdown-menu--border: none;
+    --dropdown-menu--border-radius: 8px;
+
+
+    /*
+        Component: Dropdown Menu Button
+    */
+    --dropdown-menu-button--background: none;
+    --dropdown-menu-button--hover-background: linear-gradient(to right, #2E81C8, #00539c);
+    --dropdown-menu-button--border: none;
+    --dropdown-menu-button--border-radius: 3px;
+    --dropdown-menu-button--padding: 0.5rem 0.8rem;
+    --dropdown-menu-button--font-size: 1.1rem;
+    --dropdown-menu-button--font-color: #fff;
+    --dropdown-menu-button--font-color-hover: #fff;
+
+    /*
+        Component: Header
+    */
+    --header--background: #141416;
+    --header--border: none;
+    --header--padding: 0.1rem 2rem;
+    --header--logo-width: 120px;
+
+
+    /*
+        Component: Dialog Window
+    */
+    --dialog-window--background: rgba(0, 0, 0, 0.4);
+
+
+    /*
+        Component: Message Box
+    */
+    --message-box--border-radius: 8px;
+    --message-box--message-padding: 1rem 0;
+    --message-box--icon-font-size: 1.4rem;
+    --message-box--icon-wrapper--radius: 5px;
+    --message-box--transparent-override--message-padding: 1rem;
+    --message-box--close-button-color-size: 1rem;
+    
+    // Varient: Info
+    --message-box--varient-info--background: white;
+    --message-box--varient-info--icon-color: black;
+    --message-box--varient-info--icon-wrapper-background: unset;
+    --message-box--varient-info--message-font-color: black;
+    --message-box--varient-info--border: none;
+    --message-box--varient-info--close-button-color: #fff;
+    --message-box--varient-info--close-button-color-hover: green;
+
+    // Varient: Error
+    --message-box--varient-error--background: red;
+    --message-box--varient-error--icon-color: white;
+    --message-box--varient-error--icon-wrapper-background: unset;
+    --message-box--varient-error--message-font-color: white;
+    --message-box--varient-error--border: none;
+    --message-box--varient-error--close-button-color: #fff;
+    --message-box--varient-error--close-button-color-hover: green;
+
+    // Varient: Warning
+    --message-box--varient-warning--background: orange;
+    --message-box--varient-warning--icon-color: white;
+    --message-box--varient-warning--icon-wrapper-background: unset;
+    --message-box--varient-warning--message-font-color: white;
+    --message-box--varient-warning--border: none;
+    --message-box--varient-warning--close-button-color: #fff;
+    --message-box--varient-warning--close-button-color-hover: green;
+
+    // Varient: Success
+    --message-box--varient-success--background: lightgreen;
+    --message-box--varient-success--icon-color: white;
+    --message-box--varient-success--icon-wrapper-background: unset;
+    --message-box--varient-success--message-font-color: white;
+    --message-box--varient-success--border: none;
+    --message-box--varient-success--close-button-color: #fff;
+    --message-box--varient-success--close-button-color-hover: green;
+    
+
+
+    // Transparency Modifier: Info
+    --message-box--varient-info--transparent-override--background: unset;
+    --message-box--varient-info--transparent-override--icon-color: black;
+    --message-box--varient-info--transparent-override--icon-wrapper-background: white;
+    --message-box--varient-info--transparent-override--message-font-color: white;
+    --message-box--varient-info--transparent-override--border: 1px solid white;
+    --message-box--varient-info--transparent-override--close-button-color: #fff;
+    --message-box--varient-info--transparent-override--close-button-color-hover: green;
+
+    // Transparency Modifier: Error
+    --message-box--varient-error--transparent-override--background: unset;
+    --message-box--varient-error--transparent-override--icon-color: white;
+    --message-box--varient-error--transparent-override--icon-wrapper-background: red;
+    --message-box--varient-error--transparent-override--message-font-color: white;
+    --message-box--varient-error--transparent-override--border: 1px solid red;
+    --message-box--varient-error--transparent-override--close-button-color: #fff;
+    --message-box--varient-error--transparent-override--close-button-color-hover: green;
+
+    // Transparency Modifier: Warning
+    --message-box--varient-warning--transparent-override--background: unset;
+    --message-box--varient-warning--transparent-override--icon-color: white;
+    --message-box--varient-warning--transparent-override--icon-wrapper-background: orange;
+    --message-box--varient-warning--transparent-override--message-font-color: white;
+    --message-box--varient-warning--transparent-override--border: 1px solid orange;
+    --message-box--varient-warning--transparent-override--close-button-color: #fff;
+    --message-box--varient-warning--transparent-override--close-button-color-hover: green;
+
+    // Transparency Modifier: Success
+    --message-box--varient-success--transparent-override--background: unset;
+    --message-box--varient-success--transparent-override--icon-color: white;
+    --message-box--varient-success--transparent-override--icon-wrapper-background: lightgreen;
+    --message-box--varient-success--transparent-override--message-font-color: white;
+    --message-box--varient-success--transparent-override--border: 1px solid lightgreen;
+    --message-box--varient-success--transparent-override--close-button-color: #fff;
+    --message-box--varient-success--transparent-override--close-button-color-hover: green;
+}

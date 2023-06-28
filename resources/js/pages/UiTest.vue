@@ -1,0 +1,3 @@
+<template>
+    <toolkit-test />
+</template>

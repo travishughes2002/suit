@@ -1,0 +1,151 @@
+@import './functions/generate-variable-base';
+
+/*
+    Mixins
+*/
+@mixin typograghy-base($tag) {
+    $variable-base: generate-variable-base('typography', $tag);
+
+    font-family: var(#{$variable-base + 'font-family'});
+    color: var(#{$variable-base + 'font-color'});
+    font-size: calc(var(--typography-global--base-font-size) + var(#{$variable-base + 'increased-font-size'}));
+    font-weight: 100;
+    margin: var(#{$variable-base + 'margin'});
+}
+
+@mixin list-base($tag) {
+    $variable-base: generate-variable-base('typography', $tag);
+
+    margin: var(#{$variable-base + 'margin'});
+    padding: var(#{$variable-base + 'padding'});
+    list-style-position: var(#{$variable-base + 'list-style-position'});
+    
+    &::marker {
+        color: var(#{$variable-base + 'marker-color'});
+    }
+}
+
+@mixin table-row-base($base-variable-name) {
+    padding: var(#{$base-variable-name + 'padding'});
+    text-align: var(#{$base-variable-name + 'text-align'});
+    font-family: var(#{$base-variable-name + 'font-family'});
+    font-size: calc(var(--typography-global--base-font-size) + var(#{$base-variable-name + 'increased-font-size'}));;
+    color: var(#{$base-variable-name + 'font-color'});
+    font-weight: var(#{$base-variable-name + 'font-weight'});
+}
+
+/*
+    Prefixes
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--prefix-body--background);
+    color: var(--prefix-body--font-color);
+    min-height: 100vh;
+}
+
+h1 {
+    @include typograghy-base('h1');
+}
+
+h2 {
+    @include typograghy-base('h2');
+}
+
+h3 {
+    @include typograghy-base('h3');
+}
+
+h4 {
+    @include typograghy-base('h4');
+}
+
+h5 {
+    @include typograghy-base('h5');
+}
+
+h6 {
+    @include typograghy-base('h6');
+}
+
+strong {
+    @include typograghy-base('strong');
+}
+
+p {
+    @include typograghy-base('p');
+}
+
+label {
+    @include typograghy-base('label');
+}
+
+a {
+    $variable-base: generate-variable-base('typography', 'a');
+
+    @include typograghy-base('a');
+
+    text-decoration: var(#{$variable-base + 'text-decoration'});
+
+    &:hover {
+        color: var(#{$variable-base + 'color-hover'});
+    }
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+
+    thead {
+        tr {
+            $base-variable-name: generate-variable-base('typography--table--thead', 'th');
+
+            background: var(#{$base-variable-name + 'background'});
+            
+            th {
+                @include table-row-base($base-variable-name); 
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            $base-variable-name: generate-variable-base('typography--table--tbody', 'td');
+            background: var(#{$base-variable-name + 'background'});
+
+            td {
+                @include table-row-base($base-variable-name); 
+            }
+
+            &:nth-child(2n+1) {
+                $odd-variable-base: generate-variable-base('typography--table--tbody', 'td--odd-override');
+                
+                background: var(#{$odd-variable-base + 'background'});
+                color: var(#{$odd-variable-base + 'font-color'});
+                font-weight: var(#{$odd-variable-base + 'font-weight'});
+                border: var(#{$odd-variable-base + 'border'});
+            }
+        }
+    }
+}
+
+ol {
+    @include list-base('ol');
+
+    li {
+        @include typograghy-base('li');
+    }
+}
+
+ul {
+    @include list-base('ul');
+
+    li {
+        @include typograghy-base('li');
+    }
+}

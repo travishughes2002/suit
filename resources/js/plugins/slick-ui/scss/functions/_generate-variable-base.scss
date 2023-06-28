@@ -1,0 +1,30 @@
+/*
+    --------------------------------------------------------------------------
+    Creates us a variable base, uses the following convention:
+    --{prefix}-(option)--
+
+    This is intended for usage with the complete variable naming convention,
+    which is as follows:
+    --{prefix}--(option)--{property}
+    
+    --------------------------------------------------------------------------
+    We also have an extended version of this convention for more complex cases,
+    this can be seen below:
+
+    --{prefix}--(group)--{option}
+
+    Final out come would look like this
+
+    --{prefix}--(group)--{option}--{property}
+
+    --------------------------------------------------------------------------
+*/
+@function generate-variable-base($prefix, $option) {
+    $variable: '--' + $prefix + '--' + $option + '--';
+    @return $variable;
+}
+
+@function generate-extended-variable-base($prefix, $group, $option) {
+    $variable: '--' + $prefix + '--' + $group + '--' + $option + '--';
+    @return $variable;
+}
