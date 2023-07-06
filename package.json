@@ -1,24 +1,32 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "@popperjs/core": "^2.11.6",
-        "@vitejs/plugin-vue": "^4.0.0",
-        "axios": "^1.1.2",
-        "bootstrap": "^5.2.3",
-        "laravel-vite-plugin": "^0.7.5",
-        "sass": "^1.56.1",
-        "vite": "^4.0.0",
-        "vue": "^3.2.37"
-    },
-    "dependencies": {
-        "dragula": "^3.7.3",
-        "vue-dragula": "^1.3.1",
-        "vue-kanban": "^1.8.0",
-        "vue-router": "^4.2.2"
-    }
+  "name": "@trs/trs-tookit-sdk",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Software Development Kit for TRS Toolkit",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.trscloud.net/trs/travis-cloud/slick-ui-sdk"
+  },
+  "author": "Travis Hughes",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "unplugin-vue-components": "^0.25.1",
+    "vue": "^3.3.4",
+    "vue-loader": "^17.2.2",
+    "vue-router": "^4.2.2",
+    "vue-template-compiler": "^2.7.14",
+    "vuex": "^4.1.0",
+    "laravel-mix": "^6.0.49"
+  }
 }

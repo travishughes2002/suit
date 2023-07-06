@@ -1,0 +1,20 @@
+@mixin input-base($name) { 
+    $base-name: '--' + $name + '--';
+
+    width: 100%;
+    display: block;
+    outline: none;
+    background: var(#{$base-name + 'background'});
+    border-radius: var(#{$base-name + 'border-radius'});
+    border: var(#{$base-name + 'border'});
+    padding: var(#{$base-name + 'padding'});
+
+    font-size: var(#{$base-name + 'font-size'});
+    color: var(#{$base-name + 'font-color'});
+    font-family: var(#{$base-name + 'font-family'});
+
+    &:hover {
+        border: var(#{$base-name + 'border-hover'});
+        background-color: var(#{$base-name + 'background-color-hover'});
+    }
+}
