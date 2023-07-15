@@ -1,5 +1,8 @@
 <template>
-    <input class="v-input" :placeholder="placeholder" :type="getType" v-model="value">
+    <div class="text-input">
+        <label v-show="label">{{ label }}</label>
+        <input :placeholder="placeholder" :type="getType" v-model="value">
+    </div>
 </template>
 
 <script setup>
@@ -7,11 +10,13 @@ import { computed } from 'vue';
 
 const emit = defineEmits(['update:modelValue']);
 
-const props = defineProps([
-    'modelValue',
-    'type',
-    'placeholder',
-]);
+const props = defineProps({
+    label: String,
+    modelValue: String,
+    type: String,
+    placeholder: String,
+    name: String
+});
 
 const getType = computed(() => {
     if(props.type == null || undefined || '') {
@@ -34,7 +39,11 @@ const value = computed({
 <style lang="scss">
 @import '../../../scss/mixins/input-base';
 
-.v-input {
-    @include input-base('v-input');
+.text-input {
+    width: 100%;
+    
+    input {
+        @include input-base('form--text-input');
+    }
 }
 </style>

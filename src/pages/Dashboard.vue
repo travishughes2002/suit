@@ -1,6 +1,6 @@
 <template>
     <div class="dashboard-page">
-        <wrapper class="dashboard-page__wrapper">
+        <Wrapper class="dashboard-page__wrapper">
             <div class="dashboard-page__header">
                 <h1>Dashboard</h1>
                 <p>Welcome to the Slick UI SDK. You can use this tool for developing Slick UI and testing out it's features.</p>
@@ -10,7 +10,7 @@
                 <h2>Tools:</h2>
 
             </div>
-        </wrapper>
+        </Wrapper>
     </div>
 </template>
 

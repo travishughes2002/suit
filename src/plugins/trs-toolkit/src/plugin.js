@@ -1,23 +1,18 @@
-import ToolkitElementContainer from './components/dev/ToolkitElementContainer';
-import ToolkitTest from './components/dev/ToolkitTest';
+import ToolkitElementContainer from './components/dev/ToolkitElementContainer.vue';
+import ToolkitTest from './components/dev/ToolkitTest.vue';
 
-import FieldGroup from './components/form/FieldGroup';
-import VerticalInputGroup from './components/form/VerticalInputGroup';
-import VInput from './components/form/VInput';
-import VTextarea from './components/form/VTextArea';
+import * as Form from './components/form/formComponents.js';
+import * as Layout from './components/layout/layoutComponents.js';
 
-import AnchorArray from './components/layout/AnchorArray';
-import ButtonArray from './components/layout/ButtonArray';
-
-import AppHeader from './components/AppHeader';
-import DialogWindow from './components/DialogWindow';
-import DialogInput from './components/DialogInput';
-import DropdownMenu from './components/DropdownMenu';
-import DropdownMenuButton from './components/DropdownMenuButton';
-import IconButton from './components/IconButton';
-import MessageBox from './components/MessageBox';
-import VButton from './components/VButton';
-import Wrapper from './components/Wrapper';
+import Header from './components/Header.vue';
+import DialogWindow from './components/DialogWindow.vue';
+import DialogInput from './components/DialogInput.vue';
+import DropdownMenu from './components/DropdownMenu.vue';
+import DropdownMenuButton from './components/DropdownMenuButton.vue';
+import IconButton from './components/IconButton.vue';
+import MessageBox from './components/MessageBox.vue';
+import Button from './components/Button.vue';
+import Wrapper from './components/Wrapper.vue';
 
 /**
 * Create our plugin object instance.
@@ -28,24 +23,27 @@ export default function(app) {
     * 
     * TODO: Research automatic component importing.
     */
-    app.component('toolkit-element-container', ToolkitElementContainer);
-    app.component('toolkit-test', ToolkitTest);
+    app.component('ToolkitElementContainer', ToolkitElementContainer);
+    app.component('ToolkitTest', ToolkitTest);
 
-    app.component('field-group', FieldGroup);
-    app.component('vertical-input-group', VerticalInputGroup);
-    app.component('v-input', VInput);
-    app.component('v-text-area', VTextarea);
+    app.component('Form.TextInput', Form.TextInput);
+    app.component('Form.TextArea', Form.TextArea);
+    app.component('Form.InputGroup', Form.InputGroup);
+    app.component('Form.VerticalInputGroup', Form.VerticalInputGroup);
+    app.component('Form.Checkbox', Form.Checkbox);
 
-    app.component('anchor-array', AnchorArray);
-    app.component('button-array', ButtonArray);
+    app.component('AnchorArray', Layout.AnchorArray);
+    app.component('ButtonArray', Layout.ButtonArray);
+    app.component('ScrollArea', Layout.ScrollArea);
+    app.component('Flexbox', Layout.Flexbox);
 
-    app.component('app-header', AppHeader);
-    app.component('dialog-window', DialogWindow);
-    app.component('dialog-input', DialogInput);
-    app.component('dropdown-menu', DropdownMenu);
-    app.component('dropdown-menu-button', DropdownMenuButton);
-    app.component('icon-button', IconButton);
-    app.component('message-box', MessageBox);
-    app.component('v-button', VButton);
-    app.component('wrapper', Wrapper);
+    app.component('Header', Header);
+    app.component('DialogWindow', DialogWindow);
+    app.component('DialogInput', DialogInput);
+    app.component('DropdownMenu', DropdownMenu);
+    app.component('DropdownMenuButton', DropdownMenuButton);
+    app.component('IconButton', IconButton);
+    app.component('MessageBox', MessageBox);
+    app.component('Button', Button);
+    app.component('Wrapper', Wrapper);
 }

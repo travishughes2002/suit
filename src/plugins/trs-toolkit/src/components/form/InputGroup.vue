@@ -6,7 +6,12 @@
 
 <style lang="scss">
 .input-group {
-    margin-bottom: 1rem;
-    width: 100%;
+    div {
+        margin-bottom: 1.5rem;
+
+        &:nth-last-of-child(1) {
+            margin-bottom: 0;
+        }
+    }
 }
 </style>

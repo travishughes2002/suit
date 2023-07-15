@@ -15,6 +15,6 @@
 
     &:hover {
         border: var(#{$base-name + 'border-hover'});
-        background-color: var(#{$base-name + 'background-color-hover'});
+        background-color: var(#{$base-name + 'background-hover'});
     }
 }

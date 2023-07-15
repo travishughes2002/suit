@@ -1,0 +1,5 @@
+@trs:registry=https://git.trscloud.net/api/v4/packages/npm/
+
+//git.trscloud.net/api/v4/packages/npm/:_authToken=<YOUR_TOKEN_HERE>
+
+//git.trscloud.net/api/v4/projects/21/packages/npm/:_authToken=<YOUR_TOKEN_HERE>

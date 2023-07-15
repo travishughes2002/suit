@@ -1,14 +1,15 @@
 <template>
     <div>
-        <app-header logo-url="trscloud-lite.png" app-title="TRS Toolkit SDK">
+        <Header logoUrl="trscloud-lite.png" appTitle="Toolkit SDK">
             <template #end>
-                <anchor-array>
-                    <router-link to="/dashboard">Dashboard</router-link>
-                    <router-link to="/roadmap">Roadmap</router-link>
-                    <router-link to="/ui-test">UI Test</router-link>
-                </anchor-array>
+                <AnchorArray>
+                    <RouterLink to="/dashboard">Dashboard</RouterLink>
+                    <RouterLink to="/roadmap">Roadmap</RouterLink>
+                    <RouterLink to="/ui-test">UI Test</RouterLink>
+                    <RouterLink to="/demo">Demo</RouterLink>
+                </AnchorArray>
             </template>
-        </app-header>
-        <router-view />
+        </Header>
+        <RouterView />
     </div>
 </template>

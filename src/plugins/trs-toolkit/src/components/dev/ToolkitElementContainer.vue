@@ -1,6 +1,6 @@
 <template>
     <div class="toolkit-element-container">
-        <strong>{{ title }}</strong>
+        <strong class="toolkit-element-container__title">{{ title }}</strong>
         <div class="toolkit-element-container__element-area">
             <slot />
         </div>
@@ -17,7 +17,7 @@ const props = defineProps({
     .toolkit-element-container {
         margin-bottom: 2rem;
 
-        strong {
+        &__title {
             font-size: 2rem;
             margin-bottom: 0.5rem;
             display: block;
@@ -26,7 +26,6 @@ const props = defineProps({
         &__element-area {
             padding: 2rem;
             background-color: #212224;
-            // border: 1px solid #212424;
             border-radius: 10px;
         }
     }

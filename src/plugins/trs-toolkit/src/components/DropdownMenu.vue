@@ -1,7 +1,7 @@
 <template>
     <div class="dropdown-menu">
         <div class="dropdown-menu__trigger">
-            <icon-button :faIcon="faIcon" @onClick="toggle" />
+            <IconButton :faIcon="faIcon" @onClick="toggle" />
         </div>
         <span v-show="isOpen == true">
             <div class="dropdown-menu__content" :class="getAnchorPosition">

@@ -6,6 +6,8 @@
 
 <style lang="scss">
     .anchor-array {
+        display: flex;
+
         a {
             margin-right: 1.5rem;
 

@@ -1,8 +1,10 @@
 import { createApp } from 'vue';
-import Router from './router/router';
+import Router from './router/router.js';
 import App from './App.vue';
 
-import TRSToolkit from './plugins/trs-toolkit/src/plugin';
+import ComponentDemoCard from './components/ComponentDemoCard.vue';
+
+import TRSToolkit from './plugins/trs-toolkit/src/plugin.js';
 import './plugins/trs-toolkit/scss/_default-theme.scss';
 import './plugins/trs-toolkit/scss/_prefixes.scss';
 
@@ -17,17 +19,12 @@ const app = createApp(App);
 app.use(Router);
 app.use(TRSToolkit);
 
+
 /**
- * We'll dynamically import our components, since manual importing is for pussies. The
- * below code will register components with the component name being a formatted version
- * of the file name. For exampple: 
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+ * We'll import our components here.
  */
 
-// Object.entries(import.meta.glob('./components/**/*.vue', { eager: true })).forEach(([path, definition]) => {
-//     app.component(path.split('/').pop().replace(/\.\w+$/, ''), definition.default);
-// });
+app.component('ComponentDemoCard', ComponentDemoCard)
 
 /**
  * Finally, we will attach the application instance to a HTML element with

@@ -126,16 +126,16 @@
 
             <toolkit-element-container title="Buttons">
                 <button-array>
-                    <v-button>Hello World</v-button>
-                    <v-button varient="secondary">Hello World</v-button>
+                    <Button>Hello World</Button>
+                    <Button varient="secondary">Hello World</Button>
                 </button-array>
 
                 <hr>
 
                 <p>Anchor Route & Event Emit</p>
                 <button-array>
-                    <v-button :isAnchor="true" href="/dashboard">I am set to anchor</v-button>
-                    <v-button varient="secondary">I am set to emit</v-button>
+                    <Button :isAnchor="true" href="/dashboard">I am set to anchor</Button>
+                    <Button varient="secondary">I am set to emit</Button>
                 </button-array>
 
                 <hr>
@@ -178,7 +178,7 @@
             </toolkit-element-container>
 
             <toolkit-element-container title="Header">
-                <app-header logo-url="trscloud-lite.png" app-title="Slick UI SDK">
+                <v-header logo-url="trscloud-lite.png" app-title="Slick UI SDK">
                     <template #start>
                         start
                     </template>
@@ -188,13 +188,13 @@
                     <template #end>
                         end
                     </template>
-                </app-header>
+                </v-header>
 
                 <br>
                 <br>
                 <p>Example 1:</p>
 
-                <app-header logo-url="trscloud-lite.png" app-title="Slick UI SDK">
+                <v-header logo-url="trscloud-lite.png" app-title="Slick UI SDK">
                     <template #start>
                         <anchor-array>
                             <a href="">Hello World</a>
@@ -209,26 +209,26 @@
                             <v-button size="sm" varient="secondary">Register</v-button>
                         </button-array>
                     </template>
-                </app-header>
+                </v-header>
 
                 <br>
                 <br>
                 <p>Example 2:</p>
 
-                <app-header logo-url="trscloud-lite.png" app-title="Slick UI SDK">
+                <v-header logo-url="trscloud-lite.png" app-title="Slick UI SDK">
                     <template #end>
                         <button-array>
                             <v-button size="sm">Login</v-button>
                             <v-button size="sm" varient="secondary">Register</v-button>
                         </button-array>
                     </template>
-                </app-header>
+                </v-header>
 
                 <br>
                 <br>
                 <p>Example 3:</p>
 
-                <app-header logo-url="trscloud-lite.png" app-title="Slick UI SDK">
+                <v-header logo-url="trscloud-lite.png" app-title="Slick UI SDK">
                     <template #end>
                         <anchor-array>
                             <a href="">Hello World</a>
@@ -237,7 +237,7 @@
                             <a href="">Hello World</a>
                         </anchor-array>
                     </template>
-                </app-header>
+                </v-header>
             </toolkit-element-container>
 
             <toolkit-element-container title="Button Array">
@@ -316,45 +316,29 @@
             <toolkit-element-container title="Forms">
                 <strong>Inputs:</strong>
                 <br>
-                <field-group>
-                    <label for="">Text Input</label>
-                    <v-input v-model="textInput"/>
-                </field-group>
-                <p>{{ textInput }}</p>
-
-                <hr>
-                
-                <strong>Input (with vertical group):</strong>
                 <br>
 
-                <form action="">
-                    <vertical-input-group>
-                        <field-group>
-                            <label for="">Text Input</label>
-                            <v-input />
-                        </field-group>
+                <form>
+                    <Form.InputGroup>
+                        <Form.TextInput v-model="textInput" label="Text Input" name="testInput" />
 
-                        <field-group>
-                            <label for="">Text Input</label>
-                            <v-input />
-                        </field-group>
-                    </vertical-input-group>
+                        <Form.VerticalInputGroup>
+                            <Form.TextInput v-model="textInput" label="Email Input" type="email" name="testEmailInput" />
+                            <Form.TextInput v-model="textInput" label="Password Input" type="password" name="testPasswordInput" />
+                        </Form.VerticalInputGroup>
 
-                    <br>
-                    <hr>
-                    <strong>Text Area:</strong>
-                    <br>
+                        <br>
+                        <p><strong>Result:</strong> {{ textInput }}</p>
+                        <hr>
 
-                    <field-group>
-                        <label for="">Text Area</label>
-                        <v-text-area v-model="textArea" />
-                    </field-group>
-                    <p>{{ textArea }}</p>
+                        <Form.TextArea v-model="textArea" label="Text Area" name="testTextarea"/>
 
-                    <br>
-                    <hr>
-                    <strong>Text Area:</strong>
-                    <br>
+                        <br>
+                        <p><strong>Result:</strong> {{ textArea }}</p>
+                        <hr>
+
+                        <Form.Checkbox label="Tick Me!" name="checkboxTest"/>
+                    </Form.InputGroup>
                 </form>
             </toolkit-element-container>
 

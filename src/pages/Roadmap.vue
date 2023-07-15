@@ -1,6 +1,6 @@
 <template>
     <div class="roadmap">
-        <wrapper>
+        <Wrapper>
             <h1>Roadmap</h1>
             <br>
             <br>
@@ -17,6 +17,6 @@
                 <li>hr</li>
                 <li>Card</li>
             </ul>
-        </wrapper>
+        </Wrapper>
     </div>
 </template>

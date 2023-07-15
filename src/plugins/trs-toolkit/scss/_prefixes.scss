@@ -11,6 +11,7 @@
     font-size: calc(var(--typography-global--base-font-size) + var(#{$variable-base + 'increased-font-size'}));
     font-weight: 100;
     margin: var(#{$variable-base + 'margin'});
+    display: block;
 }
 
 @mixin list-base($tag) {
@@ -44,9 +45,11 @@
 
 body {
     margin: 0;
-    background: var(--prefix-body--background);
     color: var(--prefix-body--font-color);
+    background: var(--prefix-body--background);
     min-height: 100vh;
+    height: var(--prefix-body--height);
+    max-height: var(--prefix-body--height-max);
 }
 
 h1 {
@@ -82,6 +85,7 @@ p {
 }
 
 label {
+    display: block;
     @include typograghy-base('label');
 }
 

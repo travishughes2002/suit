@@ -10,8 +10,11 @@
     /*
         Prefixes
     */
+    // --prefix-body--background: linear-gradient(to bottom right, red, blue);
     --prefix-body--background: linear-gradient(to bottom right, #3d4247, #1d1f1f);
     --prefix-body--font-color: var(--theme-global--font-color);
+    --prefix-body--height: 100vh;
+    --prefix-body--height-max: 100vh;
 
 
     /*
@@ -73,7 +76,7 @@
     --typography--a--increased-font-size: 0.1rem;
     --typography--a--font-family: var(--theme-global--default-font-family);
     --typography--a--font-color: var(--theme-global--font-color);
-    --typography--a--margin: 1rem 0;
+    --typography--a--margin: 0;
     --typography--a--text-decoration: none;
     --typography--a--color-hover: #5061DE;
 
@@ -94,10 +97,10 @@
     --typography--li--margin: 0.2rem 0;
 
     // label
-    --typography--label--increased-font-size: 0;
+    --typography--label--increased-font-size: 0.2rem;
     --typography--label--font-family: var(--theme-global--default-font-family);
     --typography--label--font-color: var(--theme-global--font-color);
-    --typography--label--margin: 0;
+    --typography--label--margin: 0 0 0.5rem 0;
 
     // Table Head
     --typography--table--thead--th--padding: 1.1rem 1rem;
@@ -120,34 +123,51 @@
     // Table Body - Odd override
     --typography--table--tbody--td--odd-override--background: rgba(201, 201, 201, 0.2);
 
-
-
+    
     /*
-        Component: v-input
+        Form Components
     */
-    --v-input--background: #2d3033;
-    --v-input--background-color-hover: #35383c;
-    --v-input--border-radius: 10px;
-    --v-input--border: 1px solid #0e0e0e;
-    --v-input--border-hover: 1px solid #0e0e0e;
-    --v-input--padding: 0.7rem;
-    --v-input--font-size: 1.3rem;
-    --v-input--font-color: #fff;
-    --v-input--font-family: var(--theme-global--default-font-family);
 
+    // Text Input
+    --form--text-input--background: #2d3033;
+    --form--text-input--background-hover: #35383c;
+    --form--text-input--border-radius: 10px;
+    --form--text-input--border: 1px solid #0e0e0e;
+    --form--text-input--border-hover: 1px solid #0e0e0e;
+    --form--text-input--padding: 0.7rem;
+    --form--text-input--font-size: 1.3rem;
+    --form--text-input--font-color: #fff;
+    --form--text-input--font-family: var(--theme-global--default-font-family);
 
-    /*
-        Component: v-textarea
-    */
-    --v-textarea--background: #2d3033;
-    --v-textarea--background-color-hover: #35383c;
-    --v-textarea--font-color: #fff;
-    --v-textarea--border: 1px solid #0e0e0e;
-    --v-textarea--border-hover: 1px solid #0e0e0e;
-    --v-textarea--border-radius: 8px;
-    --v-textarea--padding: 0.5rem;
-    --v-textarea--font-size: 1.1rem;
-    --v-textarea--font-family: var(--theme-global--default-font-family);
+    // Text Area
+    --form--textarea--background: #2d3033;
+    --form--textarea--background-hover: #35383c;
+    --form--textarea--font-color: #fff;
+    --form--textarea--border: 1px solid #0e0e0e;
+    --form--textarea--border-hover: 1px solid #0e0e0e;
+    --form--textarea--border-radius: 8px;
+    --form--textarea--padding: 0.5rem;
+    --form--textarea--font-size: 1.1rem;
+    --form--textarea--font-family: var(--theme-global--default-font-family);
+
+    // Checkbox
+    --form--checkbox--background: #2d3033;
+    --form--checkbox--border-radius: 3px;
+    --form--checkbox--border: 1px solid #0e0e0e;
+    --form--checkbox--font-color: white;
+    --form--checkbox--font-family: var(--theme-global--default-font-family);
+    --form--checkbox--icon-color: white;
+    --form--checkbox--icon-size:0.9rem;
+    --form--checkbox--fa-icon-unicode: "\f00c";
+    --form--checkbox--box-size: 1.5rem;
+
+    --form--checkbox--background-hover: #35383c;
+    --form--checkbox--border-hover: 1px solid #0e0e0e;
+    --form--checkbox--font-color-hover: white;
+
+    --form--checkbox--background-checked: #35383c;
+    --form--checkbox--border-checked: 1px solid #0e0e0e;
+
 
 
     /*

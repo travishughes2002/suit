@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import Dashboard from '../pages/Dashboard.vue';
 import UiTest from '../pages/UiTest.vue';
 import Roadmap from '../pages/Roadmap.vue';
+import Demo from '../pages/Demo.vue';
 
 const routes = [
     {
@@ -19,6 +20,10 @@ const routes = [
     {
         path: '/roadmap',
         component: Roadmap
+    },
+    {
+        path: '/demo',
+        component: Demo
     }
 ];
 
