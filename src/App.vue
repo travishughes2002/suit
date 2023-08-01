@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Header logoUrl="trscloud-lite.png" appTitle="Toolkit SDK">
+        <Header logoUrl="trscloud-lite.png" appTitle="Suit SDK">
             <template #end>
                 <AnchorArray>
                     <RouterLink to="/dashboard">Dashboard</RouterLink>
