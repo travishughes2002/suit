@@ -1,7 +1,7 @@
 {
-  "name": "@trs/trs-toolkit",
-  "version": "2.0.0",
-  "description": "TRS Toolkit is a UI Framework for creating frontend web interfaces for TRS Cloud. Implemented as a VueJS plugin for ease of use.",
+  "name": "@trs/suit-toolkit",
+  "version": "1.0.0",
+  "description": "Suit is a VueJS UI framework that offers a boilerplated approach that attempts to easy development.",
   "scripts": {
     "dev": "npm run development",
     "development": "mix",
@@ -12,12 +12,12 @@
     "production": "mix --production"
   },
   "files": [
-    "src/plugins/trs-toolkit/*"
+    "src/plugins/suit-toolkit/*"
   ],
   "exports": {
-    ".": "./src/plugins/trs-toolkit/src/plugin.js",
-    "./scss/*": "./src/plugins/trs-toolkit/scss/*",
-    "./src/*": "./src/plugins/trs-toolkit/src/*"
+    ".": "./src/plugins/suit-toolkit/src/plugin.js",
+    "./scss/*": "./src/plugins/suit-toolkit/scss/*",
+    "./src/*": "./src/plugins/suit-toolkit/src/*"
   },
   "devDependencies": {
     "sass": "^1.63.6",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.trscloud.net/trs/travis-cloud/slick-ui"
+    "url": "https://git.trscloud.net/trs/travis-cloud/suit-toolkit"
   },
   "author": "Travis Hughes",
   "license": "ISC",
